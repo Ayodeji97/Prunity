@@ -1,0 +1,23 @@
+name: Android Build
+
+on: pull_request
+
+job:
+  build:
+
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set Up JDK
+        uses: actions/setup-java@v2
+        with:
+          java-version: 1.8
+
+        - name: Run Tests
+          run: ./gradlew test
+
+        - name: Build Project
+          run: ./gradlew assemble
+
