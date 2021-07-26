@@ -1,9 +1,6 @@
 name: Android Build
 
-on:
-  pull_request:
-    branches:
-      - main
+on: [push, pull_request]
 
 job:
   build:
@@ -21,5 +18,5 @@ job:
           run: ./gradlew test
 
       - name: Build Project
-          run: ./gradlew assemble
+          run: ./gradlew assembleDebug
 
