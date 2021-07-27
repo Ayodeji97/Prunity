@@ -8,6 +8,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         // Test: More comment
+        // More comment to test
         setContentView(R.layout.activity_main)
     }
 }
