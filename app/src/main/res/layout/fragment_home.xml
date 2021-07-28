@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -12,5 +13,86 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/fragment_home_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black_700"
+        android:layout_marginStart="@dimen/margin_18"
+        android:layout_marginTop="@dimen/margin_8"
+        android:textSize="@dimen/textsize_32"
+        android:fontFamily="@font/basic"
+        android:text="@string/prunity_str"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_home_toolbar" />
+
+
+    <TextView
+        android:id="@+id/fragment_home_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/basic"
+        android:textColor="@color/black_700"
+        android:text="@string/paste_and_prune_str"
+        android:textSize="@dimen/textsize_14"
+        android:layout_marginTop="@dimen/margin_8"
+        app:layout_constraintStart_toStartOf="@+id/fragment_home_title"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_home_title" />
+
+<!--    Text input layout for long url  -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/fragment_home_url_to_prune_tl"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_18"
+        android:layout_marginTop="@dimen/margin_32"
+        android:layout_marginEnd="@dimen/margin_18"
+        android:hint="@string/input_url_str"
+        app:boxBackgroundColor="@android:color/transparent"
+        app:boxStrokeColor="@color/accent_color"
+        app:hintTextColor="@color/black_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_home_description">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/fragment_home_url_to_prune_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            tools:text="Url to prune"
+            android:textSize="12sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/fragment_home__pruned_url_tl"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/pruned_url_str"
+        app:boxBackgroundColor="@android:color/transparent"
+        app:boxStrokeColor="@color/accent_color"
+        app:hintTextColor="@color/black_700"
+        android:layout_marginTop="@dimen/margin_16"
+        app:layout_constraintEnd_toEndOf="@+id/fragment_home_url_to_prune_tl"
+        app:layout_constraintStart_toStartOf="@+id/fragment_home_url_to_prune_tl"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_home_url_to_prune_tl">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/fragment_home_pruned_url_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            tools:text="Pruned Url"
+            android:textSize="12sp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
