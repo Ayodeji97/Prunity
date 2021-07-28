@@ -4,4 +4,9 @@
     <string name="paste_and_prune_str">Paste and Prune</string>
     <string name="input_url_str">Input Url</string>
     <string name="pruned_url_str">Pruned Url</string>
+    <string name="prune_url_state_str">Prune</string>
+    <string name="pruning_state_str">Pruning</string>
+    <string name="Pruned_state_str">Pruned</string>
+    <string name="share_str">Share</string>
+    <string name="copy_str">Copy</string>
 </resources>
