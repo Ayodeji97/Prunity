@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="PrunityButton">
+    <declare-styleable name="ProgressButton">
         <attr name="backgroundColor" format="color"/>
         <attr name="progressColor" format="color"/>
         <attr name="textColor" format="color"/>
         <attr name="circularImageColor" format="color"/>
+
+        <attr name="text" format="string"></attr>
+        <attr name="loading" format="boolean"/>
+        <attr name="enabled" format="boolean"/>
+        <attr name="lottie_resId" format="string"/>
+
     </declare-styleable>
+    
 </resources>
