@@ -15,10 +15,11 @@
     </style>
 
 
-    
-    <style name="ThemeOverlay.Widget.ProgressButton.Black" parent="">
-        <item name="android:textAppearanceButton">@style/TextAppearance.ProgressButton.Black</item>
-        <item name="android:colorControlHighlight">@color/black_700</item>
+<!--  I am using the accent color here  -->
+    <style name="ThemeOverlay.Widget.ProgressButton.Accent" parent="">
+        <item name="android:textAppearanceButton">@style/TextAppearance.ProgressButton.Accent</item>
+<!--        Will effect the ripple when clicked -->
+        <item name="android:colorControlHighlight">@color/secondary_color</item>
     </style>
 
     <!--The base text appearance for all buttons-->
@@ -29,13 +30,13 @@
         <item name="android:textColor">@color/white</item>
     </style>
 
-    <!--Text styiling for black button, with selector-->
-    <style name="TextAppearance.ProgressButton.Black" parent="@style/TextAppearance.Body.White">
-        <item name="android:textColor">@color/black_700</item>
+    <!--Text styling for black button, with selector-->
+    <style name="TextAppearance.ProgressButton.Accent" parent="@style/TextAppearance.Body.White">
+        <item name="android:textColor">@color/button_text_color_pressed</item>
     </style>
 
-    <style name="Widget.ProgressButton.Black" parent="">
-        <item name="android:theme">@style/ThemeOverlay.Widget.ProgressButton.Black</item>
+    <style name="Widget.ProgressButton.Accent" parent="">
+        <item name="android:theme">@style/ThemeOverlay.Widget.ProgressButton.Accent</item>
         <item name="android:background">@drawable/progress_button_black</item>
     </style>
 

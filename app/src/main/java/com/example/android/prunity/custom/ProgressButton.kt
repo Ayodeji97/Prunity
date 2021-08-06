@@ -8,15 +8,21 @@ import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.airbnb.lottie.LottieAnimationView
 import com.example.android.prunity.R
-
+/**
+ * This layout extend contraintLayout viewGroup
+ * */
 class ProgressButton @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null,
     defStyleAttr: Int = 0
 ) : ConstraintLayout(context, attrs, defStyleAttr) {
 
-    private lateinit var progressBar : LottieAnimationView
-    private lateinit var buttonTextView : TextView
+    /**
+     * Initialise buttontextview and progressBar
+     * */
+    private val progressBar : LottieAnimationView
+    private val buttonTextView : TextView
+
 
     init {
         // inflate layout

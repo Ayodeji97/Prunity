@@ -20,6 +20,7 @@
         />
 
 
+    <!--    For progress indicator -->
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/custom_button_layout_progress_indicator"
         android:layout_width="@dimen/margin_32"
